@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .postArticles import postArticles
+from lorem_text import lorem
 
 
 def index(request):
@@ -8,7 +9,8 @@ def index(request):
    return render(request, 'index.html', context={'postArticles': postArticles})
 
 def about(request):
-    return render(request, 'about.html')
+    paragraph = lorem.words(80)
+    return render(request, 'about.html', context={'paragraph': paragraph})
 
 def contact_us(request):
    return render(request, 'contact.html')

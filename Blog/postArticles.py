@@ -3,7 +3,7 @@ from lorem_text import lorem
 postArticles = [
    {
        "title": "Article 1",
-       "body": lorem.sentence(),
+       "body": lorem.words(20),
        "date": "2020-01-01",
        "tags": ["tag1", "tag2"],
        "author": "Kevin",
@@ -11,7 +11,7 @@ postArticles = [
    },
    {
        "title": "Article 1",
-       "body": lorem.sentence(),
+       "body": lorem.words(20),
        "date": "2020-01-01",
        "tags": ["tag1", "tag2"],
        "author": "Kevin",
@@ -19,7 +19,7 @@ postArticles = [
    },
    {
        "title": "Article 1",
-       "body": lorem.sentence(),
+       "body": lorem.words(20),
        "date": "2020-01-01",
        "tags": ["tag1", "tag2"],
        "author": "Kevin",
