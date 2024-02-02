@@ -12,5 +12,3 @@ def contact_us(request):
    return render(request, 'contact.html')
 
 
-def galery(request):
-    return render(request, 'galery.html')
