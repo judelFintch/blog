@@ -1,12 +1,20 @@
 {% extends 'base.html'%}
 {%block title%}Acceuil{% endblock%}
-
-<div class="body">
-    <h1 class="">Bonjour le Monde</h1>
-
-
-
-
-
-
+{% block content%}
+<div class="container-fluid">
+    <div class="row">
+       {% for article in postArticles %}
+       <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="{{ article.img }}" height="300px" width="50px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{ article.title}}</h5>
+                <p class="card-text">{{article.body}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
+{%endblock%}
